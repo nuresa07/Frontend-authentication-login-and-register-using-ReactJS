@@ -8,7 +8,8 @@ const Navbar = () => {
 
   const Logout = async () => {
     try {
-      await axios.delete('http://localhost:5000/logout')
+      await axios.delete('https://clear-eel-jersey.cyclic.app/logout')
+      // await axios.delete('http://localhost:5000/logout')
       history.push('/')
     } catch (error) {
       console.log(error);
